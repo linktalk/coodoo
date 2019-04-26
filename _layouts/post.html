@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <header class="post-mask">
+    <figure style="background-image: url('{{ site.baseurl }}/{{ page.image }}')"/>
+  </header>
+  <div class="post-body">
+    <header class="post-header">
+      {%- if page.title -%}
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+      {%- endif -%}
+
+      {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: site.date_format }}</time>
+      {%- endif -%}
+    </header>
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </div>
+
+</article>
+

@@ -1,0 +1,102 @@
+
+.post .post-mask {
+  height: calc(64vh - 4em);
+  padding-top: 0;
+}
+
+.post-preview .post-mask {
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.post-mask figure {
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.post .post-mask figure {
+  position: relative;
+}
+
+.post-preview .post-mask figure {
+  position: absolute;
+}
+
+.post-preview a {
+  text-decoration: none;
+  color: #494949;
+}
+
+.post-preview {
+  margin-bottom: 5em;
+};
+
+.post-preview:hover {
+  -webkit-transform: translate3d(0, -0.5em, 0);
+  transform: translate3d(0, -0.5em, 0);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  box-shadow: 10px 10px 20px 10px lightgrey;
+}
+
+.post-preview:hover:after {
+  opacity: 1;
+}
+
+.post-header {
+  text-align: center;
+}
+
+h1.post-title {
+  margin: 0.8em 0;
+}
+
+.post-header .post-title {
+  font-size: 3.25em;
+}
+
+.post-header time {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1.25em;
+}
+
+.post-body {
+  margin-top: -6em;
+  position: relative;
+  background: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+.post-content {
+  margin: 3em 6em;
+}
+
+.post-list {
+  margin: 3em 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 3em;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.post-sumup {
+  text-align: center;
+  margin: 0 0.75em;
+}
+
+.post-sumup .post-excerpt {
+  text-align: left;
+  line-height: 1.75;
+}
+

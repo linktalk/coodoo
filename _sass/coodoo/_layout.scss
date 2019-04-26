@@ -1,0 +1,41 @@
+.site-header {
+  text-align: center;
+  box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+  cursor: default;
+  font-weight: 600;
+  height: auto;
+  letter-spacing: 0.25em;
+  line-height: 3.25em;
+  margin: 0;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 10000;
+  background-color: lightsalmon;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: snow;
+}
+
+.home-header {
+  padding: 120px !important;
+}
+
+.home-header .site-title:after{
+  content: '';
+  background-color: snow;
+  display: block;
+  height: 2px;
+  margin: 0.325em 0 0.5em 0;
+  width: 100%;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.25em;
+  vertical-align: top;
+}
+

@@ -1,0 +1,18 @@
+# basic
+title: Coodoo
+subtitle: by Xuelei Fan
+author: Xuelei Fan
+email: your-email@domain.com
+description: A simple Jekyll blog theme.
+copyright: Xuelei Fan
+
+# blog and page preview
+show_excerpts: true
+
+# date format
+# See also: http://shopify.github.io/liquid/filters/date/
+date_format: "%b %-d, %Y"
+
+# Build settings
+markdown: kramdown
+

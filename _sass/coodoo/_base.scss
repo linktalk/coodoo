@@ -1,0 +1,141 @@
+
+html, body {
+  color: $body-color;
+  font-size: 16px;
+  font-family: $font-family-base;
+  font-variant-ligatures: common-ligatures;
+  line-height: $line-height-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  max-width: 75%;
+  margin: auto;
+  display: block;
+}
+
+p, blockquote, pre, hr, dl, dd, ul, ol, dl, figure {
+  margin: 1.2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.8em 0;
+  line-height: $line-height-title;
+}
+
+h1, h2 {
+  &::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: 0.33em;
+    border-bottom: 1px solid $hr-color;
+  }
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+a {
+  background-color: transparent;
+  color: $link-color;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+code, pre, samp {
+  font-family: $font-family-monospace;
+  font-size: $font-size-monospace;
+
+  * {
+    font-size: inherit;
+  }
+}
+
+blockquote {
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 1.5em;
+  border-left: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+code {
+  background-color: $code-background-color;
+  border-radius: $border-radius-base;
+  padding: 2px 4px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $hr-color;
+  margin: 2em 0;
+}
+
+pre > code {
+  background-color: $code-background-color;
+  display: block;
+  padding: 0.5em;
+  -webkit-text-size-adjust: none;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  border-right: 1px solid #dcdcdc;
+  padding: 8px 12px;
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+td {
+  border-top: 1px solid #dcdcdc;
+}
+
+mark {
+  background-color: #f8f840;
+}
+
+kbd {
+  font-family: $font-family-base;
+  background-color: #fff;
+  border: 1px solid rgba(63, 63, 63, 0.25);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(63, 63, 63, 0.25);
+  color: #333;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0 0.1em;
+  padding: 0.1em 0.6em;
+  white-space: nowrap;
+}
+
+abbr {
+  &[title] {
+    border-bottom: 1px dotted #777;
+    cursor: help;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
