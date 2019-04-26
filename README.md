@@ -1,2 +1,2 @@
-# coodoo - a simple Jekyll blog theme
+# Coodoo - a simple Jekyll blog theme
 
